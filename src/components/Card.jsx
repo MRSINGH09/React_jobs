@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 function Card({bg="bg-gray-100",heading,description,btnText,btnColor="bg-black"}) {
@@ -8,12 +9,12 @@ function Card({bg="bg-gray-100",heading,description,btnText,btnColor="bg-black"}
             <p className="mt-2 mb-4">
               {description}
             </p>
-            <a
-              href="/jobs.html"
+            <Link
+              to="/jobs.html"
               className={`inline-block ${btnColor} text-white rounded-lg px-4 py-2 hover:bg-gray-700`}
             >
               {btnText}
-            </a>
+            </Link>
           </div>
     </>
   )
